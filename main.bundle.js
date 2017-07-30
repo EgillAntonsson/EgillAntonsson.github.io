@@ -77,7 +77,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>This is the APP component</h1>\n<nav>\n  <a routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\n  <a routerLink=\"/music\" routerLinkActive=\"active\">Music</a>\n  <a routerLink=\"/strength-training\" routerLinkActive=\"active\">Strength Training</a>\n</nav>\n<router-outlet></router-outlet>\n"
+module.exports = "<nav>\n  <a routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\n  <a routerLink=\"/music\" routerLinkActive=\"active\">Music</a>\n  <a routerLink=\"/strength-training\" routerLinkActive=\"active\">Strength Training</a>\n</nav>\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
@@ -162,6 +162,13 @@ AppModule = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/app/home.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Egill Antonsson</h1>\r\n<h2>Software developer, music artist, weightlifter, earthling</h2>\r\n<p>Welcome to my website, my name is Egill Antonsson and I was born and raised in Reykjavik, Iceland.<br>\r\n  Since 2014 I live in Stockholm, Sweden with my wonderful wife Jantra Phosri and our daughter Soffía Rós Egilsdóttir, which is best the daughter ever, not being biased at all.<br>\r\n  I'm also a proud bonus dad of Andri Reyr Ragnarsson which is keeping it real in Norway!<br>\r\n</p>\r\n"
+
+/***/ }),
+
 /***/ "../../../../../src/app/home.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -183,7 +190,7 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* Component */])({
         selector: 'app-home',
-        template: "<h1>This is the HOME component</h1>",
+        template: __webpack_require__("../../../../../src/app/home.component.html")
     })
 ], HomeComponent);
 
@@ -212,7 +219,7 @@ var MusicComponent = (function () {
 MusicComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* Component */])({
         selector: 'app-music',
-        template: "<h1>This is the MUSIC component</h1>",
+        template: "<h1>Music stuff coming here soon!</h1>",
     })
 ], MusicComponent);
 
@@ -241,7 +248,7 @@ var StrengthTrainingComponent = (function () {
 StrengthTrainingComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* Component */])({
         selector: 'app-strength-training',
-        template: "<h1>This is the Strength Training component</h1><router-outlet></router-outlet>",
+        template: "<h1>Strength training stuff coming here soon!</h1>",
     })
 ], StrengthTrainingComponent);
 
