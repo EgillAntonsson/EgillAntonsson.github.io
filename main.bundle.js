@@ -20,8 +20,9 @@ webpackEmptyContext.id = "../../../../../src async recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_component__ = __webpack_require__("../../../../../src/app/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__music_component__ = __webpack_require__("../../../../../src/app/music.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__strength_training_component__ = __webpack_require__("../../../../../src/app/strength-training.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programming_component__ = __webpack_require__("../../../../../src/app/programming.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__music_component__ = __webpack_require__("../../../../../src/app/music.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__weightlifting_component__ = __webpack_require__("../../../../../src/app/weightlifting.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -34,11 +35,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_2__home_component__["a" /* HomeComponent */] },
-    { path: 'music', component: __WEBPACK_IMPORTED_MODULE_3__music_component__["a" /* MusicComponent */] },
-    { path: 'strength-training', component: __WEBPACK_IMPORTED_MODULE_4__strength_training_component__["a" /* StrengthTrainingComponent */] }
+    { path: 'programming', component: __WEBPACK_IMPORTED_MODULE_3__programming_component__["a" /* ProgrammingComponent */] },
+    { path: 'music', component: __WEBPACK_IMPORTED_MODULE_4__music_component__["a" /* MusicComponent */] },
+    { path: 'weightlifting', component: __WEBPACK_IMPORTED_MODULE_5__weightlifting_component__["a" /* WeightliftingComponent */] }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -64,7 +67,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "nav {\r\n\ttext-align: center;\r\n}\r\n\r\nnav li {\r\n\tdisplay: inline;\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -77,7 +80,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav>\n  <a routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\n  <a routerLink=\"/music\" routerLinkActive=\"active\">Music</a>\n  <a routerLink=\"/strength-training\" routerLinkActive=\"active\">Strength Training</a>\n</nav>\n<router-outlet></router-outlet>\n"
+module.exports = "<nav>\n\t<li><a routerLink=\"/home\" routerLinkActive=\"active\">Home</a></li>\n\t<li><a routerLink=\"/programming\" routerLinkActive=\"active\">Programming</a></li>\n\t<li><a routerLink=\"/music\" routerLinkActive=\"active\">Music</a></li>\n\t<li><a routerLink=\"/weightlifting\" routerLinkActive=\"active\">Weightlifting</a></li>\n</nav>\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
@@ -119,9 +122,10 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_component__ = __webpack_require__("../../../../../src/app/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__music_component__ = __webpack_require__("../../../../../src/app/music.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__strength_training_component__ = __webpack_require__("../../../../../src/app/strength-training.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__programming_component__ = __webpack_require__("../../../../../src/app/programming.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__music_component__ = __webpack_require__("../../../../../src/app/music.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__weightlifting_component__ = __webpack_require__("../../../../../src/app/weightlifting.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -129,6 +133,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -146,12 +151,13 @@ AppModule = __decorate([
         declarations: [
             __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_3__home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_4__music_component__["a" /* MusicComponent */],
-            __WEBPACK_IMPORTED_MODULE_5__strength_training_component__["a" /* StrengthTrainingComponent */]
+            __WEBPACK_IMPORTED_MODULE_4__programming_component__["a" /* ProgrammingComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__music_component__["a" /* MusicComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__weightlifting_component__["a" /* WeightliftingComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_6__app_routing_module__["a" /* AppRoutingModule */]
+            __WEBPACK_IMPORTED_MODULE_7__app_routing_module__["a" /* AppRoutingModule */]
         ],
         providers: [],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
@@ -170,7 +176,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".image img {\r\n  border-radius: 50%;\r\n}\r\n", ""]);
+exports.push([module.i, ".image_container {\r\n\theight: 700px;\r\n\twidth: 525px;\r\n\tmargin-left: auto;\r\n\tmargin-right: auto;\r\n\tposition: relative;\r\n\tmargin-top: 2em;\r\n}\r\n\r\n.image {\r\n\theight: 700px;\r\n\twidth: 525px;\r\n\tborder-radius: 50%;\r\n\tposition: absolute;\r\n}\r\n\r\n#gradient {\r\n\tbackground: radial-gradient(rgba(0, 0, 0, 0) 50%, #111 70%);\r\n\tz-index: 0;\r\n}\r\n\r\nfigcaption {\r\n\ttext-align: center;\r\n}\r\n", ""]);
 
 // exports
 
@@ -183,7 +189,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Egill Antonsson</h1>\r\n<h2>software developer, music artist, weightlifter, earthling</h2>\r\n<p>Welcome to my website, my name is Egill Antonsson and I was born and raised in Reykjavik, Iceland.<br>\r\n  Since 2014 I live in Stockholm, Sweden with my wonderful wife Jantra Phosri and our daughter Soffía Rós Egilsdóttir, which is the best daughter ever, not being biased at all.<br>\r\n  I'm also a proud bonus dad of Andri Reyr Ragnarsson which is keeping it real in Norway!<br>\r\n</p>\r\n<div class=\"image\">\r\n  <img src=\"../assets/egill_soffia.jpg\" alt=\"Egill Antonsson and Soffía Rós Egilsdóttir\">\r\n</div>\r\n"
+module.exports = "<h1>Egill Antonsson</h1>\r\n<h2>software developer, music artist, weightlifter, earthling</h2>\r\n<p>\r\n\tWelcome to my website.<br>\r\n\tHere I want to share my creations, involvements and progress in my passions:<br> programming, music, weightlifting and then some!<br><br>\r\n</p>\r\n<h2>Background and family</h2>\r\n<p>\r\n\tI was born and raised in Reykjavik, Iceland.<br>\r\n\tSince 2014 I live in Stockholm, Sweden with my wonderful wife Jantra Phosri and our daughter Soffía Rós Egilsdóttir,<br>\r\n\twhich is the best daughter in the universe (not being biased at all).<br>\r\n\tI'm also a proud bonus/step dad of Andri Reyr Ragnarsson which is keeping it real in Norway.<br>\r\n</p>\r\n<figure>\r\n\t<div class=\"image_container\">\r\n\t\t<img src=\"../assets/Egill_Antonsson_and_Soffia.jpg\" alt=\"Me giving thumbs up Dale Cooper style and Soffía with her up and coming princess Leia hair buns\" title=\"Egill Antonsson and Soffía Rós Egilsdóttir\" class=\"image\">\r\n\t\t<div id=\"gradient\" class=\"image\"></div>\r\n\t</div>\r\n\t<figcaption>Me giving thumbs up <a href=\"https://media.giphy.com/media/7PwOZJLNYUkU/giphy.gif\">Dale Cooper style</a><br>and Soffía with her up and coming princess Leia hair buns</figcaption>\r\n</figure>\r\n"
 
 /***/ }),
 
@@ -238,7 +244,7 @@ var MusicComponent = (function () {
 MusicComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* Component */])({
         selector: 'app-music',
-        template: "<h1>Music stuff coming here soon!</h1>",
+        template: "<h2>Do Re Mi Fa So La Ti Do!<br>Music stuff coming here soon!</h2>",
     })
 ], MusicComponent);
 
@@ -246,12 +252,12 @@ MusicComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/strength-training.component.ts":
+/***/ "../../../../../src/app/programming.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StrengthTrainingComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgrammingComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -259,19 +265,48 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
-var StrengthTrainingComponent = (function () {
-    function StrengthTrainingComponent() {
+var ProgrammingComponent = (function () {
+    function ProgrammingComponent() {
     }
-    return StrengthTrainingComponent;
+    return ProgrammingComponent;
 }());
-StrengthTrainingComponent = __decorate([
+ProgrammingComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* Component */])({
-        selector: 'app-strength-training',
-        template: "<h1>Strength training stuff coming here soon!</h1>",
+        selector: 'app-programming',
+        template: "<h2>Chuck Norris can write infinite recursion functions\u2026and have them return.<br>\n  More, errr, programming stuff coming here soon!</h2>",
     })
-], StrengthTrainingComponent);
+], ProgrammingComponent);
 
-//# sourceMappingURL=strength-training.component.js.map
+//# sourceMappingURL=programming.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/weightlifting.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WeightliftingComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var WeightliftingComponent = (function () {
+    function WeightliftingComponent() {
+    }
+    return WeightliftingComponent;
+}());
+WeightliftingComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* Component */])({
+        selector: 'app-weightlifting',
+        template: "<h2>Lift it up and put it down again!<br>Weightlifting stuff coming here soon!</h2>",
+    })
+], WeightliftingComponent);
+
+//# sourceMappingURL=weightlifting.component.js.map
 
 /***/ }),
 
