@@ -1,5 +1,3 @@
-## My website: Egill Antonsson - software developer, music artist, weight lifter and earthling
+# My website: [Egill.rocks](http://egill.rocks)
 
-### Go to https://EgillAntonsson.github.io
-
-I develop using angularjs 4.3.2 and I push the build output files into this repository.
+## I develop in another repo and push the build output files into this repository which uses [Github Pages](https://pages.github.com)
