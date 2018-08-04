@@ -1,3 +1,3 @@
-# My website: [Egill.rocks](http://egill.rocks)
+# My website: [Egill.rocks](https://www.egill.rocks)
 
-## I develop in another repo and push the build output files into this repository which uses [Github Pages](https://pages.github.com)
+## I develop the website in another repo and push the build output files into this repository. Website is deployed via [Netlify](https://www.netlify.com)
