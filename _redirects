@@ -1,3 +1,8 @@
+# developing a Single Page App and want history pushstate to work
+/*  /index.html 200
+
+##### Domain Redirects from Netlify
+
 # Redirect domain aliases to primary domain
 https://www.antonsson.rocks/* https://www.egill.rocks/:splat 301!
 https://www.egillantonsson.rocks/* https://www.egill.rocks/:splat 301!
