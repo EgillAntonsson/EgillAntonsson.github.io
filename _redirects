@@ -1,2 +1,7 @@
 /*  /index.html 200
-http://tender-snyder-796129.netlify.com/* http://egill.rocks/:splat 301!
+
+# Redirect domain aliases to primary domain
+http://www.antonsson.rocks/* http://egill.rocks/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+http://egillantonsson.netlify.com/* http://egill.rocks/:splat 301!
