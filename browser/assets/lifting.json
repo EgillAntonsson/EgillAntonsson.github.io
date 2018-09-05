@@ -1,0 +1,65 @@
+{
+	"first_date": "2016-07-15",
+	"last_date": "2018-08-09",
+	"category_kg": {
+		"Shoulders": 164443.5,
+		"Back": 515762.7,
+		"Abs": 149099.8,
+		"All": 2191011.8,
+		"Triceps": 106082.3,
+		"Chest": 347622.5,
+		"Legs": 551060.5,
+		"Calves": 272030,
+		"Biceps": 82465.5
+	},
+	"all_creatures_lifted": [{
+			"total_kg": 1741800,
+			"count": 3,
+			"creature": {
+				"name": "Gold dragon",
+				"kg": 580600,
+				"url": "http://forgottenrealms.wikia.com/wiki/Gold_dragon"
+			}},{
+			"total_kg": 435450,
+			"count": 6,
+			"creature": {
+				"name": "Bronze dragon",
+				"kg": 72575,
+				"url": "http://forgottenrealms.wikia.com/wiki/Bronze_dragon"
+			}},{
+			"total_kg": 11380,
+			"count": 1,
+			"creature": {
+				"name": "Baird's beaked whale",
+				"kg": 11380,
+				"url": "http://us.whales.org/species-guide/bairds-beaked-whale"
+			}},{
+			"total_kg": 2200,
+			"count": 1,
+			"creature": {
+				"name": "Short-finned pilot whale",
+				"kg": 2200,
+				"url": "http://uk.whales.org/species-guide/short-finned-pilot-whale"
+			}},{
+			"total_kg": 180,
+			"count": 1,
+			"creature": {
+				"name": "Wild boar",
+				"kg": 180,
+				"url": "https://en.wikipedia.org/wiki/Wild_boar"
+			}},{
+			"total_kg": 1,
+			"count": 1,
+			"creature": {
+				"name": "Guinea pig",
+				"kg": 1,
+				"url": "https://en.wikipedia.org/wiki/Guinea_pig"
+			}},{
+			"total_kg": 0.5,
+			"count": 1,
+			"creature": {
+				"name": "African hedgehog",
+				"kg": 0.5,
+				"url": "https://www.awf.org/wildlife-conservation/hedgehog"
+			}}]
+}
