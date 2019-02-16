@@ -1,11 +1,5 @@
-# Egill Antonsson website - deploy repository
+# [Egill.rocks](https://www.egill.rocks) :guitar:
 
-Repository where I push the build artifacts for my website [Egill.rocks](https://www.egill.rocks)
+My name is Egill Antonsson and I've moved my website to
 
-My website is deployed via [Netlify](https://www.netlify.com).
-
-The website's redirects are defined in the [_redirects](_redirects) file.
-
-The sitemap.xml was generated using [botmap.io sitemap-generator](http://botmap.io/sitemap-generator)
-
-The project where I develop my website is [EgillAntonsson-website](https://github.com/EgillAntonsson/EgillAntonsson-website)
+# [Egill.rocks](https://www.egill.rocks) :guitar:
